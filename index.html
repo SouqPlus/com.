@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حراج بلس - الإعلانات</title>
+    <title>سوق بلس </title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -140,20 +140,38 @@
 
     <!-- الرأس -->
     <header class="bg-white shadow-sm sticky top-0 z-40 p-4">
-        <div class="container mx-auto max-w-4xl flex flex-col items-center">
-            <h1 class="text-2xl font-extrabold text-blue-600 mb-3 tracking-wide">حراج بلس</h1>
-            <div class="relative w-full">
-                <input id="searchInput" oninput="doSearch()" placeholder="ابحث عن سيارة، جوال، أثاث..."
-                    class="w-full bg-gray-100 rounded-2xl py-3 px-10 outline-none focus:ring-2 focus:ring-blue-400 text-sm font-semibold transition-all">
-                <span class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400">🔍</span>
-            </div>
-        </div>
+<div class="container mx-auto max-w-4xl flex flex-col gap-3">
+
+    <!-- السطر الأول: الاسم في الوسط والزر على اليسار -->
+    <div class="flex items-center justify-center relative">
+        <!-- زر + إضافة إعلان على اليسار -->
+        <a href="https://wa.me/967783069725?text=السلام عليكم، حاب أضيف إعلان في سوق بلس"
+           target="_blank"
+           class="absolute left-0 bg-yellow-300 hover:bg-yellow-400 text-black text-xs font-bold px-4 py-2 rounded-xl transition">
+           + إضافة إعلان
+        </a>
+
+        <!-- اسم الموقع في الوسط -->
+        <h1 class="text-2xl font-extrabold text-blue-600 tracking-wide">
+            سوق بلس
+        </h1>
+    </div>
+
+    <!-- سطر البحث -->
+    <div class="relative w-full">
+        <input id="searchInput" oninput="doSearch()" placeholder="ابحث عن سيارة، جوال، أثاث..."
+            class="w-full bg-gray-100 rounded-2xl py-3 px-10 outline-none focus:ring-2 focus:ring-blue-400 text-sm font-semibold transition-all">
+        <span class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400">🔍</span>
+    </div>
+
+</div>
+
     </header>
 
     <!-- المحتوى الرئيسي -->
     <main class="container mx-auto max-w-4xl px-3 mt-4">
         <div id="noResults" class="hidden text-center py-10 text-gray-500 font-bold">
-            لا توجد نتائج تطابق بحثك 😔
+            لا توجد نتائج تطابق بحثك 
         </div>
         
         <div id="grid" class="grid grid-cols-2 gap-3 md:gap-4 md:grid-cols-3">
@@ -202,7 +220,7 @@
                 title: "كنب مودرن حرف L",
                 desc: "استخدام بسيط جداً، قماش مخمل فاخر، لون رمادي.",
                 region: "الدمام",
-                price: "1,500 ريال",
+                price: "1,500 ريال يمني ",
                 phone: "966500000000",
                 images: [
                     "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&auto=format&fit=crop",
