@@ -68,17 +68,16 @@
         .slider-container:active {
             cursor: grabbing;
         }
-
         .slider-item {
-            scroll-snap-align: center;
-            flex-shrink: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            cursor: pointer;
-            transition: transform 0.5s ease;
-        }
-
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
         .arrow {
             position: absolute;
             top: 50%;
@@ -325,7 +324,7 @@ transition-all duration-500 group">
 <div class="h-0.5 bg-gradient-to-r from-transparent via-gold-400 to-transparent"></div>
 
 
-                    <div class="relative h-64 overflow-hidden bg-gray-100">
+                    <div class="relative h-40 sm:h-64 overflow-hidden bg-gray-100">
                         ${controls}
                         <div class="slider-container no-scrollbar" onscroll="updateUI(this)">
                             ${sliderImages}
@@ -333,11 +332,12 @@ transition-all duration-500 group">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                     </div>
 
-                    <div class="p-5 flex flex-col flex-grow text-right relative">
+                    <div class="p-3 sm:p-5 flex flex-col flex-grow text-right relative">
+
                         <div class="mt-2 mb-3">
-                            <h3 class="font-bold text-gray-900 text-lg leading-tight group-hover:text-gold-600 transition-colors">${p.title}</h3>
+                           <h3 class="font-bold text-gray-900 text-sm sm:text-lg leading-snug group-hover:text-gold-600 transition-colors">${p.title}</h3>
                         </div>
-                        <p class="text-xs text-gray-500 font-normal mb-4 leading-relaxed tracking-wide border-b border-gray-50 pb-4 whitespace-pre-line">
+                        <p class="text-[11px] sm:text-xs text-gray-600 mb-3 leading-relaxed tracking-wide border-b border-gray-100 pb-3 line-clamp-3 sm:line-clamp-none whitespace-pre-line">
     ${p.desc}
 </p>
 
