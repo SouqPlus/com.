@@ -228,8 +228,7 @@
         </div>
         
         <!-- Grid -->
-         <div id="grid" class="grid grid-cols-2 gap-4 md:gap-8">
-
+         <div id="grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <!-- Products injected here -->
         </div>
     </main>
@@ -332,10 +331,9 @@ transition-all duration-500 group">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                     </div>
 
-                    <div class="p-3 sm:p-5 flex flex-col flex-grow text-right relative">
-
+                     <div class="p-5 flex flex-col flex-grow text-right relative">
                         <div class="mt-2 mb-3">
-                           <h3 class="font-bold text-gray-900 text-sm sm:text-lg leading-snug group-hover:text-gold-600 transition-colors">${p.title}</h3>
+                          <h3 class="font-bold text-gray-900 text-lg leading-tight group-hover:text-gold-600 transition-colors">
                         </div>
                         <p class="text-[11px] sm:text-xs text-gray-600 mb-3 leading-relaxed tracking-wide border-b border-gray-100 pb-3 line-clamp-3 sm:line-clamp-none whitespace-pre-line">
     ${p.desc}
